@@ -5,11 +5,8 @@
  */
 
 var app = require('../app');
-var gdrv = require('../lib/googledrvapi');
 var debug = require('debug')('gdrv:server');
 var http = require('http');
-
-gdrv();
 
 /**
  * Get port from environment and store in Express.

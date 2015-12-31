@@ -1,0 +1,5 @@
+.idea
+node_modules
+public/stylesheets/*.css
+public/stylesheets/*.css.map
+client_secret.json
