@@ -9,6 +9,7 @@ var hbs = require('hbs');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var about = require('./routes/about');
+var google = require('./routes/google');
 var auth = require('./routes/oauth2callback');
 
 hbs.registerPartials(__dirname + '/views/partials');
@@ -36,6 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/about', about);
+app.use('/google', google);
 app.use('/oauth2callback', auth);
 
 // catch 404 and forward to error handler
